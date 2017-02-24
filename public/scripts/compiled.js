@@ -9,6 +9,16 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 document.addEventListener('DOMContentLoaded', function (event) {
 
+  var navToggle = document.querySelector('.nav-toggle');
+  var menu = document.querySelector('#nav');
+
+  if (navToggle) {
+    navToggle.addEventListener('click', function () {
+      navToggle.classList.toggle('is-shown');
+      menu.classList.toggle('is-shown');
+    });
+  }
+
   // home page scroll
   var scrollPage = document.querySelector('#fullpage');
 
@@ -17,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       //navigation
       'menu': '#nav',
       // 'menu': 'false',
-      'anchors': ['home', 'about', 'appointment'],
+      'anchors': [],
       'navigation': false,
       'navigationPosition': 'left',
       'navigationColor': null,

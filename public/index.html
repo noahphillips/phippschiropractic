@@ -7,17 +7,22 @@
   <meta name="" content="" />
   <meta name="" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="/css/fullPage.css">
   <link rel="stylesheet" href="/css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="/css/fullPage.css">
   <link rel="stylesheet" href="/css/compiled.css">
 </head>
 <body class="site-body">
   <div class="site-content">
+    <div class="nav-toggle">
+      <div class="toggle-container">
+        <span></span>
+      </div>
+    </div>
     <nav id="nav">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#appointment">Schedule Appointments</a></li>
+        <li data-menuanchor="home"><a href="#home">Home</a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="appointment"><a href="#appointment">Schedule Appointments</a></li>
       </ul>
     </nav>
     <div id="fullpage">
@@ -49,6 +54,13 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-anchor="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs"></div>
           </div>
         </div>
       </section>
